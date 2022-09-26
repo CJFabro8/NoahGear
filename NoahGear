@@ -1,0 +1,30 @@
+local Player = game.Players.LocalPlayer
+
+Player.Chatted:connect(function(cht)
+	if cht:match(":commands") then
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/NoahGear/main/commands'),true))()
+	elseif cht:match(":IY") then
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	elseif cht:match(":SaveToolsGui") then
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/NoahGear/main/STG'),true))()
+	elseif cht:match(":Trollinggui") then
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/CJFabro8/NoahGear/main/Tg'),true))()
+	elseif cht:match(":CocoHub") then
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/CocoHub/master/CocoZHub'),true))()
+	elseif cht:match(":rejoin") then
+	local tpservice= game:GetService("TeleportService")
+	local plr = game.Players.LocalPlayer
+
+	tpservice:Teleport(game.PlaceId, plr)
+	end
+end)
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "NoahGear(Scripts are not mine)";
+    Text = "thank you for using";
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Dont Forget!";
+    Text = "say :commands to open commands";
+})
