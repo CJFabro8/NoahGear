@@ -2,7 +2,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vozoi
 
 local main = library:Load({Name = "Commands", Theme = "Dark", SizeX = 440, SizeY = 480, ColorOverrides = {}})
 local aimbot = main:Tab("Aimbot")
-local section = aimbot:Section({Name = "Section", column = 1})
+local section = aimbot:Section({Name = "Commands", column = 1})
 
 local label = section:Label(":IY")
 
